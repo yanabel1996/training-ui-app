@@ -13,10 +13,10 @@ export default class DetailApplicationModule extends Module {
       component: DetailScreen,
     });
 
-    app.Navigation.addItem({
-      name: "Detail",
-      icon: "bi bi-table",
-      url: "/detail/:id",
-    });
+    // app.Navigation.addItem({
+    //   name: "Detail",
+    //   icon: "bi bi-table",
+    //   url: "/detail/:id",
+    // });
   }
 }

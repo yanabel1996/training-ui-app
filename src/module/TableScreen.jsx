@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "reactstrap";
 import { useTranslation } from "react-i18next";
-import { DataTableCard2, DateTime } from "asab_webui_components";
-import { TableHeader } from "./TableHeader";
+import { DataTableCard2, timeToString } from "asab_webui_components";
+import { TableHeader } from "../components/table-screen/TableHeader";
 import { useNavigate } from "react-router";
+import { cs } from "date-fns/locale/cs";
+
+// TODO: refactor + translations
 
 function setCols(data, navigate) {
   const cols = [];
@@ -35,7 +38,7 @@ function setCols(data, navigate) {
           );
       } else if (col === "created" || col === "last_sign_in") {
         column.render = ({ row }) =>
-          clickWrap(<DateTime value={row[column.title]} />, row);
+          clickWrap(timeToString(row[column.title], "long", cs), row);
       } else {
         column.render = ({ row }) =>
           clickWrap(<span>{row[column.title]}</span>, row);

@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+// TODO: change table header + translations
 export const TableHeader = () => {
   const { t } = useTranslation();
   return (
