@@ -3,6 +3,7 @@ import { Card, CardBody, CardHeader, Container } from "reactstrap";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useParams, useLocation } from "react-router";
 import { timeToString } from "asab_webui_components";
+import { fetchDetailData } from "../services/teskalabs";
 import { cs } from "date-fns/locale/cs";
 import { enUS } from "date-fns/locale/en-US";
 
@@ -48,11 +49,7 @@ export function DetailScreen() {
   useEffect(() => {
     async function getData() {
       try {
-        const res = await fetch(`https://devtest.teskalabs.com/detail/${id}`);
-        if (!res.ok) {
-          throw new Error("Something went bad");
-        }
-        const data = await res.json();
+        const data = await fetchDetailData(id);
         setInfo(data);
       } catch (error) {
         console.log(error);
