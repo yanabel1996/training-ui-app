@@ -1,4 +1,4 @@
-const TESKALABS_BASE_URL = "https://devtest.teskalabs.com";
+const TESKALABS_BASE_URL = "/api";
 
 export async function fetchTableData() {
   const res = await fetch(`${TESKALABS_BASE_URL}/data`);
