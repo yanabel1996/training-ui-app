@@ -89,10 +89,10 @@ export function TableScreen(props) {
     [i18n.language]
   );
 
-  const ServiceAPI = props.app.axiosCreate("/api");
+  const ServiceAPI = props.app.axiosCreate("");
 
   const loader = async ({ params }) => {
-    let response = await ServiceAPI.get("/data", { params: params });
+    let response = await ServiceAPI.get("/api/data", { params: params });
     const rows = response.data.data;
     const count = response.data.count;
     return { count, rows };
