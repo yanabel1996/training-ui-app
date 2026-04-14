@@ -122,6 +122,74 @@
       opacity: 1;
     }
 
+    /* Detail screen styles */
+    .detail-card-header {
+      padding: 1.25rem 1.5rem;
+    }
+
+    .detail-fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .detail-field-item {
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      background: rgba(128, 128, 128, 0.06);
+    }
+
+    /* Films screen styles */
+    .films-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .film-card {
+      transition: transform 0.2s ease;
+      overflow: hidden;
+    }
+
+    .film-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .film-card-header {
+      padding: 0.75rem 1rem;
+    }
+
+    .film-crawl {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .film-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 992px) {
+      .films-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .detail-fields {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .films-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (prefers-color-scheme: dark) {
       #app-splashscreen {
         background-color: #0E1426;

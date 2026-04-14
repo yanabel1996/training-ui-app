@@ -86,5 +86,43 @@
 
 	"Training": {
 		"Hello, there is nothing here yet!": "Zdravíčko, zatím tu nic není!"
+	},
+
+	"SessionListContainer": {
+		"Sessions": "Tabulka uživatelů"
+	},
+
+	"TableScreen": {
+		"username": "Uživatelské jméno",
+		"email": "E-mail",
+		"phone_number": "Telefonní číslo",
+		"address": "Adresa",
+		"created": "Vytvořeno",
+		"last_sign_in": "Poslední přihlášení",
+		"ip_address": "IP adresa",
+		"mac_address": "MAC adresa"
+	},
+
+	"DetailScreen": {
+		"Phone number": "Telefonní číslo",
+		"Address": "Adresa",
+		"IP address": "IP adresa",
+		"MAC address": "MAC adresa",
+		"Created": "Vytvořeno",
+		"Last sign in": "Poslední přihlášení",
+		"Back to table": "Zpět na tabulku"
+	},
+
+	"FilmsScreen": {
+		"Films": "Filmy",
+		"Release": "Datum vydání",
+		"Director": "Režisér",
+		"Producer": "Producent",
+		"Episode": "Epizoda",
+		"Planets": "Planety",
+		"Opening crawl": "Úvodní text",
+		"Characters": "Postavy",
+		"Back to films": "Zpět na filmy",
+		"No films found": "Žádné filmy nebyly nalezeny"
 	}
 }

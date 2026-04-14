@@ -86,5 +86,43 @@
 
 	"Training": {
 		"Hello, there is nothing here yet!": "Hello, there is nothing here yet!"
+	},
+
+	"SessionListContainer": {
+		"Sessions": "User table"
+	},
+
+	"TableScreen": {
+		"username": "Username",
+		"email": "Email",
+		"phone_number": "Phone number",
+		"address": "Address",
+		"created": "Created",
+		"last_sign_in": "Last sign in",
+		"ip_address": "IP address",
+		"mac_address": "MAC address"
+	},
+
+	"DetailScreen": {
+		"Phone number": "Phone number",
+		"Address": "Address",
+		"IP address": "IP address",
+		"MAC address": "MAC address",
+		"Created": "Created",
+		"Last sign in": "Last sign in",
+		"Back to table": "Back to table"
+	},
+
+	"FilmsScreen": {
+		"Films": "Films",
+		"Release": "Release",
+		"Director": "Director",
+		"Producer": "Producer",
+		"Episode": "Episode",
+		"Planets": "Planets",
+		"Opening crawl": "Opening crawl",
+		"Characters": "Characters",
+		"Back to films": "Back to films",
+		"No films found": "No films found"
 	}
 }

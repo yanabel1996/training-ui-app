@@ -10,9 +10,10 @@ import { Application, I18nModule, AboutModule } from "asab_webui_shell";
   const { default: TableApplicationModule } = await import(
     "./module/index.jsx"
   );
-  const { default: DetailApplicationModule } = await import(
-    "./detail/index.jsx"
-  );
+  // const { default: DetailApplicationModule } = await import(
+  //   "./module/index.jsx"
+  // );
+  const { default: FilmsApplicationModule } = await import("./films/index.jsx");
 
   const config = {
     title: "TeskaLabs Training UI App",
@@ -54,7 +55,8 @@ import { Application, I18nModule, AboutModule } from "asab_webui_shell";
           I18nModule,
           AboutModule,
           TableApplicationModule,
-          DetailApplicationModule,
+          // DetailApplicationModule,
+          FilmsApplicationModule,
         ]}
       />
     </HashRouter>
