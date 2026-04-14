@@ -2,6 +2,8 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
+    { "source": "/data", "destination": "https://devtest.teskalabs.com/data" },
+    { "source": "/detail/:id", "destination": "https://devtest.teskalabs.com/detail/:id" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
