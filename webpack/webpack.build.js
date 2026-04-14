@@ -33,6 +33,7 @@ const buildConfig = {
 			patterns: [
 				{ from: 'public/media', to: 'media' },
 				{ from: 'public/locales', to: 'locales' },
+				{ from: 'public/manifest.json', to: 'manifest.json' },
 			],
 		}),
 	],
