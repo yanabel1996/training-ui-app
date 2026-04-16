@@ -45,7 +45,6 @@
 	},
 
 	"General": {
-		"Resolution": "Rozlišení",
 		"Name": "Název",
 		"Description": "Popis",
 		"Created at": "Vytvořeno",
@@ -61,6 +60,7 @@
 		"Back": "Zpět",
 		"Continue": "Pokračujte",
 		"Close": "Zavřít",
+		"Tenant": "Tenant",
 		"Your session will expire soon": "Vaše relace brzy vyprší",
 		"Change theme": "Změna pozadí",
 		"Page": "Stránky",
